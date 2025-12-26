@@ -36,7 +36,7 @@ const About = () => {
                 <p className="font-medium">B.S. Mechanical Engineering</p>
                 <p className="text-muted-foreground">Cal Poly Pomona</p>
                 <p className="text-sm text-muted-foreground mt-1">
-                  Graduated with honors
+                  Expected Graduation: December 2026
                 </p>
               </CardContent>
             </Card>
@@ -104,7 +104,6 @@ const About = () => {
             <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
               {[
                 "SolidWorks",
-                "CATIA",
                 "Fusion 360",
                 "ANSYS",
                 "MATLAB",
@@ -113,8 +112,7 @@ const About = () => {
                 "CNC Machining",
                 "GD&T",
                 "FEA/CFD",
-                "Sheet Metal Design",
-                "Arduino/Embedded",
+                "Arduino",
               ].map((skill) => (
                 <div
                   key={skill}

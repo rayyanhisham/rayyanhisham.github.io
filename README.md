@@ -1,73 +1,42 @@
-# Welcome to your Lovable project
+# Rayyan Hisham — Portfolio
 
-## Project info
+This repository contains the portfolio website for Rayyan Hisham. The site showcases projects, contact information, and an embedded resume (PDF) for easy viewing and download.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+## Local development
 
-## How can I edit this code?
+Prerequisites: Node.js and npm (or bun/pnpm). Recommended: use nvm to manage Node versions.
 
-There are several ways of editing your application.
+Quick start:
 
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+```bash
+npm install
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+Open http://localhost:5173 in your browser (Vite default) to view the site.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Resume
 
-**Use GitHub Codespaces**
+The resume PDF is available at `/Rayyan_Hisham_Resume_auto.pdf` and is embedded on the `/resume` page. Use the View or Download buttons on the resume page.
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Edit content
 
-## What technologies are used for this project?
+- Homepage: `src/pages/Index.tsx`
+- Resume page: `src/pages/Resume.tsx`
+- Projects data: `src/data/projects.ts`
+- Navbar: `src/components/Navbar.tsx`
 
-This project is built with:
+## Deploy
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Build for production:
 
-## How can I deploy this project?
+```bash
+npm run build
+npm run preview
+```
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+Deploy the `dist/` folder to your preferred static hosting provider (Netlify, Vercel, GitHub Pages, etc.).
 
-## Can I connect a custom domain to my Lovable project?
+## Contact
 
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+If you need help editing the site or want changes, open an issue or edit files and submit a PR.

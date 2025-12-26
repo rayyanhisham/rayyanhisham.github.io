@@ -15,13 +15,18 @@ const Index = () => {
         <div className="max-w-3xl animate-fade-in">
           <p className="text-primary font-medium mb-4">Mechanical Engineer</p>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
-            Building solutions through precision engineering
+            Rayyan Hisham — Precision Engineering & Prototyping
           </h1>
           <p className="text-lg text-muted-foreground mb-8 max-w-2xl">
-            I'm a mechanical engineering graduate from Cal Poly Pomona with a passion 
-            for design, manufacturing, and bringing innovative ideas to life.
+            Mechanical engineering graduate from Cal Poly Pomona specializing in CAD, FEA, and product development. I design and prototype solutions for real-world problems.
           </p>
           <div className="flex flex-wrap gap-4">
+            <Button asChild size="lg">
+              <Link to="/resume">
+                View Resume
+                <ArrowRight className="ml-2" size={18} />
+              </Link>
+            </Button>
             <Button asChild size="lg">
               <Link to="/projects">
                 View Projects
